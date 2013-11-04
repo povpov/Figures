@@ -1,4 +1,4 @@
-Figures
-=======
+FiguresApp
+==========
 
 Figures Application

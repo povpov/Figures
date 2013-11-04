@@ -1,0 +1,29 @@
+<h1>Index</h1>
+<form action="" method="POST">
+    <fieldset><legend>Board</legend>
+        <label>Width</label><input type="text" name="width" value="<?php echo $this->board->getWidth() ?>" /><br/>
+        <label>Height</label><input type="text" name="height" value="<?php echo $this->board->getHeight()?>"/><br/>
+    </fieldset>
+    <fieldset><legend>Figure</legend>
+        <label>Figure</label><select name="figure">
+            <option value="">-- select --</option>
+            <option value="circle">Circle</option>
+            <option value="rectangle">Rectangle</option>
+            <option value="colored_circle">Colored Circle</option>
+            <option value="colored_rectangle">Colored Rectangle</option>
+        </select><br/>
+
+        <label>Label</label><input type="text" name="label" /><br/>
+        <label>Color</label><input type="text" name="color" /><br/>
+        <label>Position X</label><input type="text" name="x" /><br/>
+        <label>Position Y</label><input type="text" name="y" /><br/>
+        <label>Radius</label><input type="text" name="radius" /><br/>
+        <label>Width</label><input type="text" name="rWidth" /><br/>
+        <label>Height</label><input type="text" name="rHeight" /><br/>
+    </fieldset>
+
+    <input type="submit" value="Add" name="add"/>
+</form>
+
+Number of figures: <?php echo count($this->board->getFigures()) ?>.<br/>
+<img src="<?php echo $this->board->render()?>" width="<?php echo $this->board->getWidth()?>" height="<?php echo $this->board->getHeight()?>" border=1/>

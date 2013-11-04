@@ -1,0 +1,27 @@
+{
+    "name": "zingorn/figures-app",
+    "description": "Figures Application",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/zingorn/Figures.git"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "module/Application/src/",
+            "module/Figures/src/"
+        ]
+    },
+    "target-dir": "Application",
+    "authors": [
+        {
+            "name": "zingorn",
+            "email": "zingorn@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+        "zingorn/figures": "dev-master"
+    }
+}
